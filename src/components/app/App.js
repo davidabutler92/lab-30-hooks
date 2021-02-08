@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import AvatarContainer from '../Container/AvatarContainer';
+import ListPage from '../ListPage/ListPage';
 import DetailPage from '../DetailPage/DetailPage';
 
 export default function App() {
@@ -13,7 +13,7 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={AvatarContainer} />
+        <Route exact path="/" component={() => <ListPage />} />
         <Route exact path="/detail" component={DetailPage} />
       </Switch>
     </Router>
