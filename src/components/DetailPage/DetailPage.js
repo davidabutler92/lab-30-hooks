@@ -4,11 +4,12 @@ import { getCharactersById } from '../services/avatarApi';
 import { Link } from 'react-router-dom';
 
 export default function DetailPage() {
-  const [character, SetCharacter] = useState({});
+  const [character, setCharacter] = useState({});
   const { id } = useParams();
+  console.log(id, 'character id');
 
   useEffect(() => {
-    getCharactersById(id).then((character) => SetCharacter(character));
+    getCharactersById(id).then((character) => setCharacter(character));
   }, []);
 
   const { name, allies, enemies, gender, hair, photoUrl } = character;

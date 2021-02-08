@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import ListItem from '../ListItem/ListItem';
 import PropTypes from 'prop-types';
 
-function List({ characters }) {
+function ListPage({ characters }) {
+  console.log(characters, 'array');
   const charactersList = characters.map((character) => {
     return (
       <li key={character._id}>
-        <Link to={`/detail/${character._id}`}>
+        <Link to={`detail/${character._id}`}>
           <ListItem
             key={character._id}
             name={character.name}
@@ -17,11 +18,12 @@ function List({ characters }) {
       </li>
     );
   });
+
   return <ul>{charactersList}</ul>;
 }
 
-List.propTypes = {
+ListPage.propTypes = {
   characters: PropTypes.array,
 };
 
-export default List;
+export default ListPage;
