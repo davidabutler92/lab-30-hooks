@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem component renders a single character 1`] = `
+<DocumentFragment>
+  <h1>
+    some name
+  </h1>
+  <img
+    alt="avatar character"
+    class="image"
+    src="some photo url"
+  />
+</DocumentFragment>
+`;

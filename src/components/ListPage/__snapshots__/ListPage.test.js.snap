@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListPage component renders list of characters 1`] = `
+<DocumentFragment>
+  <ul
+    data-testid="characters"
+  >
+    <li>
+      <a
+        href="/detail/1"
+      >
+        <h1>
+          someName
+        </h1>
+        <img
+          alt="avatar character"
+          class="image"
+          src="somePhoto"
+        />
+      </a>
+    </li>
+    <li>
+      <a
+        href="/detail/2"
+      >
+        <h1>
+          someName
+        </h1>
+        <img
+          alt="avatar character"
+          class="image"
+          src="somePhoto"
+        />
+      </a>
+    </li>
+    <li>
+      <a
+        href="/detail/3"
+      >
+        <h1>
+          someName
+        </h1>
+        <img
+          alt="avatar character"
+          class="image"
+          src="somePhoto"
+        />
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

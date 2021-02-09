@@ -4,7 +4,6 @@ import ListItem from '../ListItem/ListItem';
 import PropTypes from 'prop-types';
 
 function ListPage({ characters }) {
-  console.log(characters, 'array');
   const charactersList = characters.map((character) => {
     return (
       <li key={character._id}>
@@ -19,7 +18,7 @@ function ListPage({ characters }) {
     );
   });
 
-  return <ul>{charactersList}</ul>;
+  return <ul data-testid="characters">{charactersList}</ul>;
 }
 
 ListPage.propTypes = {
