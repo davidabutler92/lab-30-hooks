@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailPage component renders a details of a single character 1`] = `
+<DocumentFragment>
+  <div>
+    <h1 />
+    <img />
+    <ul>
+      <li>
+        Allies: 
+      </li>
+      <li>
+        Enemies: 
+      </li>
+      <li>
+        Gender: 
+      </li>
+      <li>
+        Hair Color: 
+      </li>
+    </ul>
+    <a
+      href="/"
+    >
+      List Page
+    </a>
+  </div>
+</DocumentFragment>
+`;

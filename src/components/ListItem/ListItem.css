@@ -1,0 +1,6 @@
+.image {
+  height: 35%;
+  width: 35%;
+  border-radius: 10px;
+  box-shadow: black 10px 10px 30px 1px;
+}
